@@ -14,7 +14,10 @@ const tones = {
 function Bottle({ tone = "mist" }) {
   const t = tones[tone] ?? tones.mist;
   return (
-    <div aria-hidden="true" className="absolute inset-0 grid place-items-center">
+    <div
+      aria-hidden="true"
+      className="absolute inset-0 grid place-items-center"
+    >
       <div className="flex flex-col items-center">
         <div className={cn("h-6 w-10 rounded-t-md", t.cap)} />
         <div className={cn("h-40 w-24 rounded-t-xl rounded-b-3xl", t.body)} />
@@ -24,7 +27,8 @@ function Bottle({ tone = "mist" }) {
 }
 
 export default function ProductCard({ product }) {
-  const { name, category, description, size, price, badge, image, tone } = product;
+  const { name, category, description, size, price, badge, image, tone } =
+    product;
 
   return (
     <article className="group flex h-full flex-col rounded-card border border-linen bg-porcelain p-3 shadow-soft transition-shadow duration-500 ease-soft hover:shadow-lifted">
@@ -52,8 +56,10 @@ export default function ProductCard({ product }) {
         <p className="mt-2 line-clamp-2 text-sm text-ink-soft">{description}</p>
 
         <div className="mt-auto flex items-center justify-between gap-3 pt-6">
-          <p className="text-sm text-ink-muted">
-            <span className="text-body font-medium text-ink">{formatPrice(price)}</span>
+          <p className="text-sm text-ink-soft">
+            <span className="text-body font-medium text-ink">
+              {formatPrice(price)}
+            </span>
             <span className="ml-2">{size}</span>
           </p>
           <Button variant="secondary" size="sm" href={`#${product.id}`}>
