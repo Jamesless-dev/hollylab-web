@@ -1,0 +1,48 @@
+export const CURRENCY = "USD";
+
+export const products = [
+  {
+    id: "gel-limpiador",
+    name: "Gel limpiador suave",
+    category: "Limpieza",
+    description: "Retira maquillaje y exceso de grasa sin resecar.",
+    size: "150 ml",
+    price: 22,
+    badge: null,
+    image: null,
+    tone: "mist",
+  },
+  {
+    id: "tonico-equilibrante",
+    name: "Tónico equilibrante",
+    category: "Tónico",
+    description: "Prepara la piel y ayuda a mantener su equilibrio natural.",
+    size: "200 ml",
+    price: 26,
+    badge: null,
+    image: null,
+    tone: "ivory",
+  },
+  {
+    id: "serum-hidratante",
+    name: "Sérum hidratante",
+    category: "Sérum",
+    description: "Hidratación ligera que se absorbe al instante.",
+    size: "30 ml",
+    price: 38,
+    badge: "Nuevo",
+    image: null,
+    tone: "brand",
+  },
+  {
+    id: "crema-spf50",
+    name: "Crema protectora SPF 50",
+    category: "Protección",
+    description: "Protección diaria de textura fina, sin residuo blanco.",
+    size: "50 ml",
+    price: 34,
+    badge: null,
+    image: null,
+    tone: "mist",
+  },
+];
