@@ -6,6 +6,8 @@
 @import "@fontsource/cormorant-garamond/400-italic.css";
 @import "@fontsource/cormorant-garamond/500.css";
 @import "@fontsource-variable/manrope";
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Corinthia:wght@400;700&display=swap");
 
 @theme {
   --color-brand-50: #f1f6f9;
@@ -102,4 +104,16 @@
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+.corinthia-regular {
+  font-family: "Corinthia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.corinthia-bold {
+  font-family: "Corinthia", cursive;
+  font-weight: 700;
+  font-style: normal;
 }
