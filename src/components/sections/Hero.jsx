@@ -68,7 +68,7 @@ export default function Hero() {
 
           <motion.h1
             variants={rise}
-            className="mt-4 max-w-xl corinthia-regular text-5xl font-bold text-brand-900 sm:text-6xl md:text-7xl leading-tight"
+            className="mt-4 max-w-xl bonheur-royale-regular text-1xl font-bold text-brand-900 sm:text-1x2 md:text-7xl leading-tight"
           >
             {title}
           </motion.h1>
