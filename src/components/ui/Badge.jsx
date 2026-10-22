@@ -12,7 +12,7 @@ export default function Badge({ variant = "soft", className, children }) {
       className={cn(
         "inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium",
         variants[variant],
-        className
+        className,
       )}
     >
       {children}

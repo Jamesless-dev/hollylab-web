@@ -14,7 +14,7 @@ export const site = {
     text: "Fórmulas suaves, pensadas para cuidar tu piel en pocos pasos y sin complicaciones.",
     primary: { label: "Ver productos", href: "#productos" },
     secondary: { label: "Armar mi rutina", href: "#rutina" },
-    image: null,
+    image: "portada.png",
     routine: ["Limpia", "Equilibra", "Protege"],
   },
 };
