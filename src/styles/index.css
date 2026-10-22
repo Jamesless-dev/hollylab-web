@@ -6,9 +6,7 @@
 @import "@fontsource/cormorant-garamond/400-italic.css";
 @import "@fontsource/cormorant-garamond/500.css";
 @import "@fontsource-variable/manrope";
-@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Corinthia:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap");
 @theme {
   --color-brand-50: #f1f6f9;
   --color-brand-100: #e0ebf1;
@@ -69,7 +67,7 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: var(--color-ivory);
+    background-color: #faf7f2;
     color: var(--color-ink);
     font-family: var(--font-sans);
     font-size: var(--text-body);
@@ -106,14 +104,10 @@
   }
 }
 
-.corinthia-regular {
-  font-family: "Corinthia", cursive;
-  font-weight: 400;
-  font-style: normal;
+.font-corinthia {
+  font-family: "Corinthia", cursive !important;
 }
 
-.corinthia-bold {
-  font-family: "Corinthia", cursive;
-  font-weight: 700;
-  font-style: normal;
+.font-playfair {
+  font-family: "Playfair Display", serif !important;
 }
