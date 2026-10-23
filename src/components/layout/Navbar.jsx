@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, ShoppingBag, Sprout, X } from "lucide-react";
 import { Button } from "../ui";
 import { site } from "../../data/site";
 
@@ -16,18 +16,12 @@ export default function Navbar() {
           aria-label="Principal"
           className="flex h-14 items-center justify-between rounded-full border border-linen/80 bg-ivory/70 pl-6 pr-2 shadow-soft backdrop-blur-xl"
         >
-          <a href="#" className="flex items-center gap-2">
-            {site.logo ? (
-              <img
-                src={site.logo}
-                alt={site.name}
-                className="h-8 w-auto object-contain"
-              />
-            ) : (
-              <span className="font-display text-2xl font-medium tracking-wide text-brand-700">
-                {site.name}
-              </span>
-            )}
+          <a
+            href="#"
+            className="flex items-center gap-2 font-display text-2xl font-medium tracking-wide text-brand-700"
+          >
+            <Sprout size={20} strokeWidth={1.5} aria-hidden="true" />
+            {site.name}
           </a>
 
           <ul className="hidden items-center gap-8 md:flex">
@@ -47,6 +41,7 @@ export default function Navbar() {
               className="hidden md:inline-flex"
             >
               {site.cta.label}
+              <ShoppingBag size={16} aria-hidden="true" />
             </Button>
             <button
               type="button"
@@ -85,6 +80,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
             >
               {site.cta.label}
+              <ShoppingBag size={16} aria-hidden="true" />
             </Button>
           </div>
         )}
