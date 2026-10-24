@@ -1,6 +1,11 @@
 import { MotionConfig } from "motion/react";
 import { Navbar, Footer } from "./components/layout";
-import { Hero, ProductGrid, Routine, Ingredients } from "./components/sections";
+import {
+  Hero,
+  ProductShowcase,
+  Routine,
+  Ingredients,
+} from "./components/sections";
 
 export default function App() {
   return (
@@ -8,7 +13,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <ProductGrid />
+        <ProductShowcase />
         <Routine />
         <Ingredients />
       </main>
