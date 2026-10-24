@@ -40,6 +40,7 @@
 
   /* ── Tipografía ─────────────────────────────────────────────── */
   --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-hero: "Italiana", ui-serif, Georgia, serif;
   --font-sans: "Manrope Variable", ui-sans-serif, system-ui, sans-serif;
   --font-script:
     "La Belle Aurore", "Segoe Script", cursive; /* frase manuscrita */
