@@ -3,7 +3,7 @@ import { ingredients, ingredientsIntro } from "../../data/ingredients";
 
 export default function Ingredients() {
   return (
-    <Section id="ingredientes" className="bg-brand-700 text-ivory">
+    <Section id="ingredientes" decor="ingredients" className="bg-brand-700 text-ivory">
       <div className="grid gap-16 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
         <div>
           <h2 className="max-w-md text-heading font-light text-ivory">{ingredientsIntro.title}</h2>

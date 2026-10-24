@@ -4,7 +4,7 @@ import { products } from "../../data/products";
 
 export default function ProductGrid() {
   return (
-    <Section id="productos">
+    <Section id="productos" decor="products">
       <div className="flex flex-wrap items-end justify-between gap-6">
         <div className="max-w-xl">
           <h2 className="text-heading font-light text-brand-900">

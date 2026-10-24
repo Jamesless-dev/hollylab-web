@@ -7,7 +7,7 @@ const icons = { droplets: Droplets, leaf: Leaf, sun: Sun };
 
 export default function Routine() {
   return (
-    <Section id="rutina" className="bg-sand">
+    <Section id="rutina" decor="routine" className="bg-sand">
       <div className="max-w-xl">
         <h2 className="text-heading font-light text-brand-900">Tres pasos, cada día.</h2>
         <p className="mt-4 text-body-lg text-ink-soft">

@@ -2,7 +2,8 @@ import { motion } from "motion/react";
 import { ArrowRight, Droplets, Heart, Leaf, Sparkles, Sun } from "lucide-react";
 import { Button, Badge } from "../ui";
 import { Section } from "../layout";
-import HeroDecor, { Float } from "./HeroDecor";
+import HeroDecor from "./HeroDecor";
+import { Float } from "../decor";
 import { site } from "../../data/site";
 import { heroDetails } from "../../data/hero";
 
@@ -47,8 +48,10 @@ function Underline() {
   );
 }
 
+/** Convierte "Una *piel serena* empieza con una rutina *simple*." en texto con cursivas.
+ *  La primera frase marcada lleva además el subrayado. */
 function RichTitle({ text }) {
-  const parts = text.split(/\*(.+?)\*/g);
+  const parts = text.split(/\*(.+?)\*/g); // los índices impares son las frases con énfasis
   let first = true;
   return parts.map((part, i) => {
     if (i % 2 === 0) return part;
@@ -93,7 +96,7 @@ export default function Hero() {
 
           <motion.h1
             variants={rise}
-            className="mt-6 max-w-xl text-heading font-light leading-[1.1] text-brand-900 sm:text-heading-lg xl:max-w-[38rem] xl:text-display"
+            className="mt-6 max-w-xl font-hero font-normal tracking-wide leading-[1.1] text-brand-900 sm:text-heading-lg xl:max-w-[38rem] xl:text-display"
           >
             <RichTitle text={title} />
           </motion.h1>

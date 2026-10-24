@@ -16,12 +16,12 @@ export default function Navbar() {
           aria-label="Principal"
           className="flex h-14 items-center justify-between rounded-full border border-linen/80 bg-ivory/70 pl-6 pr-2 shadow-soft backdrop-blur-xl"
         >
-          <a
-            href="#"
-            className="flex items-center gap-2 font-display text-2xl font-medium tracking-wide text-brand-700"
-          >
-            <Sprout size={20} strokeWidth={1.5} aria-hidden="true" />
-            {site.name}
+          <a href="#" className="flex items-center gap-2">
+            <img
+              src="/hollylab_logo.png"
+              alt="HollyLab"
+              className="h-8 w-auto"
+            />
           </a>
 
           <ul className="hidden items-center gap-8 md:flex">
