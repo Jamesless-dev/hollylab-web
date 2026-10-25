@@ -2,7 +2,10 @@ export const site = {
   name: "HollyLab",
   logo: "hollylab_logo.png",
   nav: [
-    { label: "Productos", href: "#productos" },
+    {
+      label: "Productos",
+      href: "https://api.whatsapp.com/send/?phone=51993618707&text&type=phone_number&app_absent=0",
+    },
     { label: "Rutina", href: "#rutina" },
     { label: "Ingredientes", href: "#ingredientes" },
     { label: "Nosotros", href: "#nosotros" },
