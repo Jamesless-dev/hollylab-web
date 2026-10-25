@@ -9,12 +9,12 @@ export const products = [
   },
   {
     id: "sun-serum",
-    name: "Hyalu-Cica Water-Fit Sun Serum",
-    image: "/productos/sun-serum.png",
+    name: "Madeca Cream",
+    image: "/productos/madeca-cream.png",
   },
   {
     id: "madeca-cream",
-    name: "Madeca Cream",
-    image: "/productos/madeca-cream.png",
+    name: "Hyalu-Cica Water-Fit Sun Serum",
+    image: "/productos/sun-serum.png",
   },
 ];
